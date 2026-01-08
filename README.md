@@ -12,6 +12,18 @@ A Python-based dashboard that tracks active Polymarket binary markets closing wi
 * **Focus Logic:** Automatically selects 1 Crypto and 1 Sports market to highlight.
 * **UI:** Built with Streamlit, supporting sorting and missing-price filtering.
 
+## Logic Definitions
+
+As per the assignment requirements, the "Focus Markets" are selected based on the following keyword found in `src/core/select_focus.py`:
+
+### 1. Crypto Market
+A market is categorized as "Crypto" if its `category` or `question` contains any of:
+> `crypto`, `bitcoin`, `ethereum`, `solana`, `btc`, `eth`
+
+### 2. Sports Market
+A market is categorized as "Sports" if its `category` or `question` contains any of:
+> `sports`, `nba`, `nfl`, `soccer`, `football`, `premier league`
+
 ## How to Run
 
 ### Prerequisites
